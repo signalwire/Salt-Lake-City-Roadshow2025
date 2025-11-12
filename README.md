@@ -1,5 +1,3 @@
-# README
-
 # 🧠 SignalWire Dev Meetup: Real-Time AI the Fun Way
 
 ---
