@@ -1,0 +1,65 @@
+# README
+
+# 🧠 SignalWire Dev Meetup: Real-Time AI the Fun Way
+
+---
+
+## 🧷 Helpful Links  
+- ❤️ [SIGNALWIRE WEEKLY VIRTUAL HANGOUTS](https://info.signalwire.com/events-and-webinars)
+- 🧠 [SignalWire AI SDK](https://developer.signalwire.com/sdks/agents-sdk/)  
+- 🧾 [SWML Basics](https://developer.signalwire.com/swml.md)
+-  [Nebula Works Repairs Live Demo](https://replit.com/t/signalwire/repls/Nebula-Works-Repairs)
+- [Holy Guacamole Blog](https://signalwire.com/blogs/developers/voice-ai-drive-thru)
+- 🤖 [Fred AI Tutorial](https://github.com/signalwire/signalwire-agents/tree/main/tutorial/fred/tutorial)  
+- 🃏 [Sigmond Blackjack Agent](https://github.com/signalwire/sigmond-blackjack)  
+- 🛠️ [SignalWire Agents UI](https://github.com/signalwire/signalwire-agents-ui)  
+- 🤓 [SignalWire Agents Examples Repo](https://github.com/signalwire/signalwire-agents)
+
+---
+
+## ⚙️ Step 1: Make a SignalWire Space  
+[Sign up here](https://signalwire.com/sign-up). You’ll need this to access numbers, call flows, agents, and all the real-time magic. Get your project ID and tokens.
+
+---
+
+## 🤖 Step 2: Try Fred, Our Friendly AI  
+Clone this buddy:  
+```bash
+git clone https://github.com/signalwire/signalwire-agents.git
+cd signalwire-agents/tutorial/fred
+python fred.py
+```
+
+Fred’s job? Talk to callers. Your job? Tweak Fred or replace him with something cooler.
+
+---
+
+## 🃏 Bonus Round: Sigmond Plays Blackjack  
+Want an AI agent that’s not just functional, but dangerously fun?  
+Try [`sigmond-blackjack`](https://github.com/signalwire/sigmond-blackjack) — it’s a blackjack-playing AI that talks trash and takes calls.  
+Perfect if your boss says “make it interactive” and you say “say less.”
+
+---
+
+## 🧩 Build Your Own Agent  
+Use `AgentBase` from the SDK. Throw in a `run()` and define your goal with a few prompt sections. Customize with tools or SWAIG functions. No PhD required.
+
+---
+
+## 🪄 Add SWML if You Want Power  
+Write some YAML or JSON. Control calls. Loop callers. Summon AI. Whatever.  
+SWML = telecom wizardry for humans.  
+Bonus: it won't yell at you for missing a semicolon.
+
+---
+
+
+---
+
+## 🤫 Final Tip  
+Most platforms *bolt* AI *onto* telecom. SignalWire **is** telecom + AI.  
+No extra hops. No extra lag. Just vibes.
+
+---
+
+🎉 That’s it. Hack responsibly.

@@ -1,0 +1,96 @@
+---
+version: 1.0.0
+sections:
+  main:
+  - answer
+  - ai:
+      prompt:
+        text: |
+          ## Identity
+          You are Nova, the receptionist for Nebula Works Repairs.
+
+          ## Greeting
+          Start every conversation by saying: 'Hello! This is Nova from Nebula Works Repairs. How can I help you today?'
+
+          ## Capabilities
+          You can handle the following types of inquiries:
+
+          ### Business Hours
+          Provide information about when we're open.
+          - We're open Monday through Saturday
+          - Operating hours: 8am to 8pm
+          - Closed on Sundays
+
+          ### Pricing Information
+          Answer questions about repair costs.
+          - Repairs typically cost between 1000 and 5000 credits
+          - Exact pricing depends on the specific repair needed
+
+          ### General Questions
+          Handle all other non-technical inquiries about our services.
+
+          ## Transfer Rules
+          When to transfer to a technical specialist:
+          - For TECHNICAL problems like engine issues
+          - For hyperdrive problems
+          - For any complex spacecraft repair questions
+          - Use the transfer_to_specialist function when transferring
+
+          ## Communication Guidelines
+          How to interact with customers:
+          - Be friendly and professional
+          - Listen carefully to understand if the issue is technical
+          - When transferring, say: 'I am going to transfer you to one of our technical specialists to help get your rocket flying again.'
+      languages:
+      - name: English
+        code: en-US
+        voice: rime.astra
+        engine: rime
+        model: arcana
+      post_prompt_url: https://webhook.site/77bdecb9-3993-497a-b111-ac2940157ed5
+      params:
+        end_of_speech_timeout: 2500
+        attention_timeout: 30000
+        inactivity_timeout: 60000
+        swaig_allow_swml: true
+        debug_webhook_url: https://webhook.site/77bdecb9-3993-497a-b111-ac2940157ed5
+        debug_webhook_level: 10
+        video_idle_file: https://www.dropbox.com/scl/fi/5jfokiizzew2k6d0b58fx/nova_still.mov?rlkey=dt45psrxoefjv95hkbp2i8hmf&st=zmcbzor3&dl=1
+        video_talking_file: https://www.dropbox.com/scl/fi/4iwb485ubysqeb4vo7ypz/1_1080_N-1.mp4?rlkey=h1rnk3nwv3f63a16bnlkcv9u9&st=epsjco0s&dl=1
+      SWAIG:
+        functions:
+        - function: check_hours
+          purpose: Tell customer our business hours
+          parameters:
+            type: object
+            properties: {}
+          data_map:
+            output:
+              response: We're open Monday through Saturday, 8am to 8pm. Closed Sundays.
+        - function: transfer_to_specialist
+          purpose: Transfer technical problems to our specialist
+          parameters:
+            type: object
+            properties:
+              problem:
+                type: string
+                description: What technical issue they have
+            required:
+            - problem
+          data_map:
+            output:
+              response: Transferring to specialist now.
+              action:
+              - say: I am going to transfer you to one of our technical specialists
+                  to help get your rocket flying again.
+              - SWML:
+                  version: 1.0.0
+                  sections:
+                    main:
+                    - transfer:
+                        dest: https://demo.signalwire.com/relay-bins/c976efbe-cf2d-475d-9831-f7b1fa74a0ee
+                        params:
+                          problem_description: "${args.problem}"
+                          transferred_from: Nova
+                          transfer_time: "${time.now}"
+  - hangup
