@@ -15,7 +15,7 @@
 ---
 
 ## ⚙️ Step 1: Make a SignalWire Space  
-[Sign up here](https://signalwire.com/sign-up). You’ll need this to access numbers, call flows, agents, and all the real-time magic. Get your project ID and tokens.
+[Sign up here](https://id.signalwire.com/login/session/new). You’ll need this to access numbers, call flows, agents, and all the real-time magic. Get your project ID and tokens.
 
 ---
 
