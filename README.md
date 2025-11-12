@@ -1,5 +1,4 @@
-# 🧠 SignalWire Dev Meetup: Real-Time AI the Fun Way
-
+# 🧠 SignalWire Dev Meetup
 ---
 
 ## 🧷 Helpful Links  
@@ -38,7 +37,7 @@ Perfect if your boss says “make it interactive” and you say “say less.”
 
 ---
 
-## 🧩 Build Your Own Agent  
+## 🧩 Build Your Own Agent via SDK 
 Use `AgentBase` from the SDK. Throw in a `run()` and define your goal with a few prompt sections. Customize with tools or SWAIG functions. No PhD required.
 
 ---
