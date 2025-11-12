@@ -8,8 +8,8 @@
 - ❤️ [SIGNALWIRE WEEKLY VIRTUAL HANGOUTS](https://info.signalwire.com/events-and-webinars)
 - 🧠 [SignalWire AI SDK](https://developer.signalwire.com/sdks/agents-sdk/)  
 - 🧾 [SWML Basics](https://developer.signalwire.com/swml.md)
--  [Nebula Works Repairs Live Demo](https://replit.com/t/signalwire/repls/Nebula-Works-Repairs)
-- [Holy Guacamole Blog](https://signalwire.com/blogs/developers/voice-ai-drive-thru)
+- 🚀 [Nebula Works Repairs Live Demo](https://replit.com/t/signalwire/repls/Nebula-Works-Repairs)
+- 🥑 [Holy Guacamole Blog](https://signalwire.com/blogs/developers/voice-ai-drive-thru)
 - 🤖 [Fred AI Tutorial](https://github.com/signalwire/signalwire-agents/tree/main/tutorial/fred/tutorial)  
 - 🃏 [Sigmond Blackjack Agent](https://github.com/signalwire/sigmond-blackjack)  
 - 🛠️ [SignalWire Agents UI](https://github.com/signalwire/signalwire-agents-ui)  
@@ -22,17 +22,16 @@
 
 ---
 
-## 🤖 Step 2: Try Fred, Our Friendly AI  
-Clone this buddy:  
-```bash
-git clone https://github.com/signalwire/signalwire-agents.git
-cd signalwire-agents/tutorial/fred
-python fred.py
-```
-
-Fred’s job? Talk to callers. Your job? Tweak Fred or replace him with something cooler.
-
+## Step 2: Create Your First Agent
+- Vist : [Nebula Works SWML](https://github.com/signalwire/Salt-Lake-City-Roadshow2025/tree/main/Nebula%20Works%20Repairs/SWML)
+- Copy and Paste the yaml script into your SignalWire Space
+- Assign SWML Script to a phone number and dial the PSTN number
 ---
+
+## Step 3: Implement click to call functionality
+- Vist [Nebula Works html](https://github.com/signalwire/Salt-Lake-City-Roadshow2025/blob/main/Nebula%20Works%20Repairs/index.html)
+- Go to Click to Call Widget on SignalWire Dashboard
+- Replace Call Widget in .html file with the call widget generated from your space
 
 ## 🃏 Bonus Round: Sigmond Plays Blackjack  
 Want an AI agent that’s not just functional, but dangerously fun?  
@@ -52,11 +51,6 @@ SWML = telecom wizardry for humans.
 Bonus: it won't yell at you for missing a semicolon.
 
 ---
-
-
----
-
-## 🤫 Final Tip  
 Most platforms *bolt* AI *onto* telecom. SignalWire **is** telecom + AI.  
 No extra hops. No extra lag. Just vibes.
 
